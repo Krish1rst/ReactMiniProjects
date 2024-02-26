@@ -40,5 +40,6 @@ reducers:{
       },
 }
 })
+console.log(cartSlice)
 export const {clearCart, removeItem, increase, decrease, calculateTotals}=cartSlice.actions;
 export default cartSlice.reducer;
