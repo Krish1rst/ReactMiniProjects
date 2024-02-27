@@ -1,5 +1,5 @@
 import React from 'react'
-import { closeModal } from '../features/modal/modalSlice'
+import { closeModal } from '../features/modal/ModalSlice.jsx'
 import { clearCart } from '../features/cart/cartSlice'
 import { useDispatch } from 'react-redux'
 function Modal() {
