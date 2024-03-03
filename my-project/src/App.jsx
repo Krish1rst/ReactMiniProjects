@@ -4,7 +4,8 @@ import Clock from './Clock/index'
 import FetchData from './FetchData/FetchData'
 import { toast } from 'react-toastify';
 import ProductSection from './FilterProducts/Filter';
-import Form from './Form/Form';
+import ToDo from './ToDo/ToDo';
+import FormData from './FormData/FormData';
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
 
   return (
     <>
-      <Form />
+    <FormData/>
+      {/* <ToDo/> */}
       {/* <div>
           <button onClick={() => toast.success("Success")}>Notify!</button>
       </div> */}
