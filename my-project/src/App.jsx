@@ -4,20 +4,22 @@ import Clock from './Clock/index'
 import FetchData from './FetchData/FetchData'
 import { toast } from 'react-toastify';
 import ProductSection from './FilterProducts/Filter';
+import Form from './Form/Form';
 
 
 function App() {
 
-  const notify = () => toast.success("Success");
+
   return (
     <>
+      <Form />
       {/* <div>
-          <button onClick={notify}>Notify!</button>
+          <button onClick={() => toast.success("Success")}>Notify!</button>
       </div> */}
       {/* <StarRating/> */}
       {/* <Clock/> */}
         {/* <FetchData/> */}
-        <ProductSection/>
+        {/* <ProductSection/> */}
     </>
   )
 }
