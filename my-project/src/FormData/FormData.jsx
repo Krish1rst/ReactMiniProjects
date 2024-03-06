@@ -1,13 +1,22 @@
 import React from 'react';
 
 function MyForm() {
-    
+ 
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const formData= new FormData(e.currentTarget)
+
         const newEntry=formData.append('Passion',"Drawing")
+
+        const isTrue=formData.has('name')
+        console.log(isTrue)
+
+        const name=formData.get('email')
+        console.log(name)
+
         const data=Object.fromEntries(formData)
+       
         
         for (let [name,value] of formData) {
             console.log(`key is ${name} :and value is ${value}`)
@@ -63,7 +72,9 @@ function MyForm() {
                 <div className="text-center">
                     <button type="submit" className="inline-block bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Submit</button>
                 </div>
+                
             </form>
+            
         </div>
     );
 }
